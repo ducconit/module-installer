@@ -8,7 +8,7 @@ use Composer\Installer\LibraryInstaller;
 
 class Installer extends LibraryInstaller
 {
-    public $packageType = 'ducnt-theme';
+    public $packageType = 'ducnt-package';
 
     public function getInstallPath(PackageInterface $package)
     {
