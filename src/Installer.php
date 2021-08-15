@@ -1,6 +1,6 @@
 <?php
 
-namespace DNT\Composer\Packages;
+namespace DNT\Composer\Modules;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
@@ -17,15 +17,15 @@ if (!function_exists('finish')) {
 
 class Installer extends LibraryInstaller
 {
-    public $packageType = 'ducnt-package';
+    public $packageType = 'module';
 
     private $dr = DIRECTORY_SEPARATOR;
 
     public function getInstallPath(PackageInterface $package)
     {
         $extra = $this->composer->getPackage()->getExtra();
-        if (isset($extra['ducnt']) && isset($extra['ducnt']['package-dir'])) {
-            $path = $extra['ducnt']['package-dir'];
+        if (isset($extra['ducnt']) && isset($extra['ducnt']['module-dir'])) {
+            $path = $extra['ducnt']['module-dir'];
         }
         $path = finish($path ?? $this->getPathDefault(), $this->dr);
         return $path . str_replace('/', '-', $package->getPrettyName());
@@ -38,6 +38,6 @@ class Installer extends LibraryInstaller
 
     private function getPathDefault()
     {
-        return 'app' . $this->dr . 'Packages';
+        return 'modules';
     }
 }

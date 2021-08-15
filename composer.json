@@ -1,9 +1,9 @@
 {
-  "name": "dnt/package-installer",
+  "name": "dnt/module-installer",
   "type": "composer-plugin",
   "autoload": {
     "psr-4": {
-      "DNT\\Composer\\Packages\\": "src/"
+      "DNT\\Composer\\Modules\\": "src/"
     }
   },
   "authors": [
@@ -18,6 +18,6 @@
     "composer/composer": "^2.1"
   },
   "extra": {
-    "class": "DNT\\Composer\\Packages\\Plugin"
+    "class": "DNT\\Composer\\Modules\\Plugin"
   }
 }

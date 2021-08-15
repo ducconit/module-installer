@@ -1,6 +1,6 @@
-## <center>Package installer</center>
+## <center>Module installer</center>
 
 *Coded by Trung Đức*
 ```
-Trình cài đặt package từ internet
+Trình cài đặt module từ internet
 ```
