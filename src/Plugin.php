@@ -1,6 +1,6 @@
 <?php
 
-namespace Ducnt\Composer\Packages;
+namespace DNT\Composer\Packages;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
