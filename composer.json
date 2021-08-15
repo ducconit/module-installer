@@ -1,0 +1,21 @@
+{
+    "name": "ducnt/package-installer",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Ducnt\\Composer\\Packages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ducnt",
+            "email": "ducnt@sphoton.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^2.1"
+    },
+    "extra": {
+        "class": "Ducnt\\Composer\\Packages\\Plugin"
+    }
+}
